@@ -4,9 +4,9 @@
   /* background-color: #282c34; */
 }
 
-/* body {
-  background-color: rgb(62, 52, 68);
-} */
+body {
+  background-color: rgb(36, 43, 46);
+}
 
 .App {
   width: 100vw;
@@ -21,6 +21,7 @@
   height: calc(64px * 8);
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 0 0 10px rgb(70, 140, 140);
 }
 
 .cell {
@@ -45,17 +46,27 @@
   background-color: rgb(82, 122, 159);
 }
 
+.black:hover {
+  background-color: rgb(75, 111, 145);
+}
+
 .white {
   background-color: rgb(149, 183, 215);
 }
 
+.white:hover {
+  background-color: rgb(141, 173, 202);
+}
+
 .selected {
-  background-color: rgb(34, 174, 174);
+  box-shadow: 0 0 10px rgb(34, 237, 237);
+  /* background-color: rgb(50, 242, 187); */
 }
 
 .available {
-  height: 12px;
-  width: 12px;
+  height: 13px;
+  width: 13px;
   border-radius: 50%;
-  background-color: green;
+  background-color: rgb(75, 240, 215);
+  box-shadow: 0 0 10px rgb(34, 237, 237);
 }

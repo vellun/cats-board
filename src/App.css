@@ -31,6 +31,10 @@
   align-items: center;
 }
 
+/* .cell:hover {
+  background-color: rgba(31, 90, 70);
+} */
+
 .cell img {
   width: 48px;
   height: 48px;
@@ -38,9 +42,20 @@
 }
 
 .black {
-  background-color: rgb(30, 61, 51);
+  background-color: rgb(82, 122, 159);
 }
 
 .white {
-  background-color: rgb(146, 241, 210);
+  background-color: rgb(149, 183, 215);
+}
+
+.selected {
+  background-color: rgb(34, 174, 174);
+}
+
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: green;
 }

@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #282c34;
+  /* background-color: #282c34; */
 }
+
+/* body {
+  background-color: rgb(62, 52, 68);
+} */
 
 .App {
   width: 100vw;
@@ -27,10 +31,16 @@
   align-items: center;
 }
 
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
 .black {
   background-color: rgb(30, 61, 51);
 }
 
 .white {
-  background-color: aquamarine;
+  background-color: rgb(146, 241, 210);
 }

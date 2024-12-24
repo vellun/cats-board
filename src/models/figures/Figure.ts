@@ -37,7 +37,5 @@ export class Figure {
     }
     return true;
   }
-  moveFigure(target: Cell): boolean {
-    return true;
-  }
+  moveFigure(target: Cell) {}
 }

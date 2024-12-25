@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* background-color: #282c34; */
 }
 
 body {
@@ -32,10 +31,6 @@ body {
   align-items: center;
 }
 
-/* .cell:hover {
-  background-color: rgba(31, 90, 70);
-} */
-
 .cell img {
   width: 48px;
   height: 48px;
@@ -60,7 +55,6 @@ body {
 
 .selected {
   box-shadow: 0 0 10px rgb(34, 237, 237);
-  /* background-color: rgb(50, 242, 187); */
 }
 
 .available {

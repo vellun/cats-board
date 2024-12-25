@@ -51,7 +51,7 @@ const BoardComponent: FC<BoardProps> = ({
 
   return (
     <div>
-      <h3>Сейчас ходят {currentPlayer?.color} котики</h3>
+      <h3 id="time-h">Time for {currentPlayer?.color} cats</h3>
       <div className="board">
         {board.cells.map((row, index) => (
           <React.Fragment key={index}>

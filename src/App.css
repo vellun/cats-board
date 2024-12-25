@@ -71,3 +71,27 @@ body {
   margin-left: 50px;
   background-color: lightblue;
 }
+
+.underAttack {
+  background-color: rgb(75, 237, 213);
+}
+
+#time-h {
+  color: rgb(173, 192, 209);
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: aqua;
+}
+
+.lostFigureImg {
+  width: 48px;
+  height: 48px;
+}
+
+.lostInner {
+  height: calc(50vh - 60px);
+  background-color: rgb(46, 69, 77);
+  padding: 10px;
+}

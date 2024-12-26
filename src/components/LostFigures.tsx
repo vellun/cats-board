@@ -3,7 +3,7 @@ import { Figure } from "../models/figures/Figure";
 
 interface LostFiguresProps {
   title: string;
-  figures: Figure[];
+  figures: Map<string, [number, Figure]>;
 }
 
 const LostFigures: FC<LostFiguresProps> = ({ title, figures }) => {
@@ -11,12 +11,13 @@ const LostFigures: FC<LostFiguresProps> = ({ title, figures }) => {
     <div className="lost">
       <div className="lostInner">
         <h3>{title}</h3>
-        {figures.map((figure) => (
+
+        {Array.from(figures.entries()).map(([name, [count, figure]]) => (
           <div key={figure.id}>
-            {figure.name}{" "}
             {figure.logo && (
               <img className="lostFigureImg" src={figure.logo} alt="" />
-            )}
+            )}{" "}
+            {name} x{count}
           </div>
         ))}
       </div>

@@ -10,8 +10,8 @@ import { Figure } from "./figures/Figure";
 
 export class Board {
   cells: Cell[][] = [];
-  lostBlackFigures: Figure[] = [];
-  lostWhiteFigures: Figure[] = [];
+  lostBlackFigures: Map<string, [number, Figure]> = new Map();
+  lostWhiteFigures: Map<string, [number, Figure]> = new Map();
 
   public initCells() {
     for (let i = 0; i < 8; i++) {

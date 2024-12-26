@@ -91,9 +91,21 @@ export class Cell {
   }
 
   addLostFigure(figure: Figure) {
-    figure.color === Colors.BLACK
-      ? this.board.lostBlackFigures.push(figure)
-      : this.board.lostWhiteFigures.push(figure);
+    if (figure.color === Colors.BLACK) {
+      let figures_cnt = this.board.lostBlackFigures.get(figure.name);
+      if (!figures_cnt) {
+        figures_cnt = [0, figure];
+      }
+      figures_cnt[0] += 1;
+      this.board.lostBlackFigures.set(figure.name, figures_cnt);
+    } else {
+      let figures_cnt = this.board.lostWhiteFigures.get(figure.name);
+      if (!figures_cnt) {
+        figures_cnt = [0, figure];
+      }
+      figures_cnt[0] += 1;
+      this.board.lostWhiteFigures.set(figure.name, figures_cnt);
+    }
   }
 
   moveFigure(target: Cell) {
